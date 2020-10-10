@@ -5,23 +5,24 @@ import java.util.List;
 
 public class Celulares {
 
-	private List<String> nome = new ArrayList<String>();
-	private List<Integer> id = new ArrayList<Integer>();
+	private static List<String> nome = new ArrayList<String>();
+	private static List<Integer> id = new ArrayList<Integer>();
+	
 
-	public List<String> getNome() {
+	public static List<String> getNome() {
 		return nome;
 	}
 
-	public void setNome(List<String> nome) {
-		this.nome = nome;
+	public static void setNome(List<String> nome) {
+		Celulares.nome = nome;
 	}
 
-	public List<Integer> getId() {
+	public static List<Integer> getId() {
 		return id;
 	}
 
-	public void setId(List<Integer> id) {
-		this.id = id;
+	public static void setId(List<Integer> id) {
+		Celulares.id = id;
 	}
 	
 }
